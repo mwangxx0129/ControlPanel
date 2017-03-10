@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>456</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,17 +17,17 @@
    <widget class="QPushButton" name="onPushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>340</x>
       <y>20</y>
       <width>41</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>On</string>
+     <string>Test</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tempature">
+   <widget class="QLabel" name="isDay">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Tempature(F/C)</string>
+     <string>0/1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Tempature</string>
+     <string>isDay</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -63,10 +63,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Door</string>
+     <string>Blind</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tempature_2">
+   <widget class="QLabel" name="isBlind">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -76,7 +76,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Lock(0/1)</string>
+     <string>0/1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -89,10 +89,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Music</string>
+     <string>InLight</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tempature_3">
+   <widget class="QLabel" name="isInLight">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -102,7 +102,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>On(0/1)</string>
+     <string>0/1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -115,10 +115,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>Heat</string>
+     <string>OutLight</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tempature_4">
+   <widget class="QLabel" name="isOutLight">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -128,54 +128,28 @@
      </rect>
     </property>
     <property name="text">
-     <string>Rank</string>
+     <string>0/1</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QPushButton" name="enableInLightPushButton">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>140</y>
-      <width>160</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
+      <x>140</x>
       <y>110</y>
-      <width>80</width>
+      <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>ON/OFF</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>80</y>
-      <width>80</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ON/OFF</string>
+     <string>0/1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="refreshPushButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>20</y>
-      <width>80</width>
+      <x>340</x>
+      <y>60</y>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
@@ -183,17 +157,118 @@
      <string>refresh</string>
     </property>
    </widget>
-   <widget class="QLabel" name="TESTLabel">
+   <widget class="QPushButton" name="enableOutLightPushButton">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>190</y>
-      <width>281</width>
-      <height>41</height>
+      <x>140</x>
+      <y>140</y>
+      <width>51</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>0/1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>items</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>enable</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open/close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openBlindPushButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openInLightPushButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>110</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openOutLightPushButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="TESTLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -203,7 +278,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
